@@ -1,7 +1,7 @@
 // Monday-Week-2
 /************************************
-Student first name: 
-Student last name: 
+Student first name: Santos
+Student last name: Novoa
 *************************************/
 
 #include <iostream>
@@ -16,14 +16,23 @@ with GitHub !
 declare a constant integer named:
 NBR_SCORES with a value of 3
 *************************************/
-
+int NBR_SCORES = 3;
 /************************************
 IMPORTANT!
 Use the above constant in your code
 do not use a literal number 3
 anywhere in your code!!!!!
 *************************************/
-
+class Student; {
+  private:
+    string firstName;
+    string lastName;
+    int arrayScore[NBR_SCORES];
+  public:
+    void setName (string, string);
+    void setScores ();
+    void showScores ();
+}
 /************************************
 define a class named Student
 The class will have 3 private members:

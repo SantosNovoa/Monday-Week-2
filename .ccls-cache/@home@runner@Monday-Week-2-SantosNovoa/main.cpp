@@ -69,22 +69,22 @@ first name and last name
 *************************************/
 int main() {
   Student student;
-  string firstName, lastName;
+  string fName, lName;
   
   cout << "Enter student's first-name and last-name: ";
-  getline(cin, firstName, ' ');
-  getline(cin, lastName);
+  getline(cin, fName, ' ');
+  getline(cin, lName);
 
   
-  student.setName(firstName, lastName);
+  student.setName(fName, lName);
   student.setScores();
   student.showScores();
   cout << "Goodbye";
   return 0;
 }
-void Student::setName(string firstName, string lastName) {
-  this-> firstName = firstName;
-  this-> lastName = lastName;
+void Student::setName(string fName, string lName) {
+  firstName = fName;
+  lastName = lName;
 }
 void Student::setScores() {
   for (int i = 0; i < NBR_SCORES; i++) {

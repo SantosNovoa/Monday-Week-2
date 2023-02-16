@@ -16,32 +16,32 @@ with GitHub !
 declare a constant integer named:
 NBR_SCORES with a value of 3
 *************************************/
-int NBR_SCORES = 3;
+const int NBR_SCORES = 3;
 /************************************
 IMPORTANT!
 Use the above constant in your code
 do not use a literal number 3
 anywhere in your code!!!!!
 *************************************/
-class Student; {
+class Student {
   private:
     string firstName;
     string lastName;
-    int arrayScore[NBR_SCORES];
+    int arrayScores[NBR_SCORES];
   public:
     void setName (string, string);
     void setScores ();
-    void showScores ();
-}
+    void showScores () const;
+};
 /************************************
 define a class named Student
 The class will have 3 private members:
 1) a string for first name
 2) a string for last name
 3) an integer array of size NBR_SCORES
-
 the class will have 3 public members:
 NOTE: only prototype the functions in the class
+
 1) a void function named setName with 2 string parameters
 to set the student first name and last name
 2) a void function named setScores with no parameters
@@ -68,9 +68,35 @@ first name and last name
 6) use showScores to show the student's scores
 *************************************/
 int main() {
+  Student student;
+  string firstName, lastName;
+  
+  cout << "Enter student's first-name and last-name: ";
+  getline(cin, firstName, ' ');
+  getline(cin, lastName);
 
-  cout << "\nGoodbye" << endl;
+  
+  student.setName(firstName, lastName);
+  student.setScores();
+  student.showScores();
   return 0;
+}
+void Student::setName(string firstName, string lastName) {
+  this-> firstName = firstName;
+  this-> lastName = lastName;
+}
+void Student::setScores() {
+  for (int i = 0; i < NBR_SCORES; i++) {
+    cout << "Enter score " << i + 1 << " for " << firstName << " " << lastName << endl;
+    cin >> arrayScores[i];
+  }
+}
+void Student::showScores() const {
+  int total = 0;
+  cout << "Scores for " << firstName << 
+  for (int i = 0; i < NBR_SCORES; i++) {
+    cout <
+  }
 }
 
 /************************************

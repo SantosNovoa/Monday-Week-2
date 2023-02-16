@@ -79,25 +79,31 @@ int main() {
   student.setName(firstName, lastName);
   student.setScores();
   student.showScores();
+
+  cout << "Goodbye";
   return 0;
 }
 void Student::setName(string firstName, string lastName) {
-  this-> firstName = firstName;
-  this-> lastName = lastName;
+  this->firstName = firstName;
+  this->lastName = lastName;
 }
-void Student::setScores() {
+/*void Student::setScores() {
   for (int i = 0; i < NBR_SCORES; i++) {
-    cout << "Enter score " << i + 1 << " for " << firstName << " " << lastName << endl;
+    cout << "Enter score " << i + 1 << " for " << firstName << " " << lastName <<  endl;
     cin >> arrayScores[i];
   }
-}
-void Student::showScores() const {
-  int total = 0;
-  cout << "Scores for " << firstName << 
+}*/
+/*void Student::showScores() const {
+  int total;
+  int average;
+  cout << "Scores for " << firstName << " " << lastName << " are " << endl;
   for (int i = 0; i < NBR_SCORES; i++) {
-    cout <
+    cout << arrayScores[i] << " ";
+    total += arrayScores[i] 
   }
-}
+  average = total / NBR_SCORES;
+  cout << endl << "The average is: " << average << endl;
+}*/
 
 /************************************
 Define your member funcrtions 

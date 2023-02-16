@@ -113,9 +113,17 @@ below the main function
 /********************************************
 // YOUR OUTPUT
 // copy-and-paste your output here
-
-
-
+Enter student's first-name and last-name: Santos Novoa
+Enter score 1 for Santos Novoa
+100
+Enter score 2 for Santos Novoa
+98
+Enter score 3 for Santos Novoa
+94
+Scores for Santos Novoa are
+100 98 94 
+The average is: 97
+Goodbye
 // SAMPLE OUTPUT
 Enter student's first-name and last-name: Brad Gilbert
 Enter score 1 for Brad Gilbert
